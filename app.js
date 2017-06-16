@@ -1,5 +1,5 @@
-var http = require('http'); // get the http api
-var render = require('./render')  // all render handling here
+var http = require('http');
+var render = require('./view'); 
 
 var server = http.createServer(function(req, res){
   console.log('requested url: '+ req.url);
