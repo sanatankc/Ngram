@@ -15,11 +15,10 @@
   "keywords": [
     "Node",
     "JS",
-    "Express",
     "JavaScript",
     "project",
     "Instagram"
   ],
-  "author": "jztsaurabh",
+  "author": "@jztsaurabh",
   "license": "ISC"
 }
