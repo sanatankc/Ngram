@@ -1,18 +1,31 @@
 var http = require('http');
-var render = require('./view'); 
+var express = require('express');
 
-var server = http.createServer(function(req, res){
-  console.log('requested url: '+ req.url);
+var app = express();
+app.set('view engine', 'ejs');
+app.use('/static', express.static('static/'));
 
-  if (req.url == '/')
-    render.home(req, res);
-  else if (req.url == '/favicon.ico')
-    res.end();
-  else if (req.url.search('css'))
-    render.style(req, res);
-  else
-    res.end();        //close connection
+// magic is here
+
+app.get('/', function(req, res) {
+  res.render('login');
 });
 
-server.listen(3000, '127.0.0.1');
+app.get('/signup', function(req, res) {
+  res.render('signup');
+});
+
+app.get('/home', function(req, res) {
+  res.render('index');
+});
+
+app.get('/profile/:name', function(req, res) {
+  res.render('profile', {name: req.params.name, images: []});
+});
+
+app.get('/post', function(req, res) {
+  res.render('post')
+});
+
+app.listen(3000);
 console.log('Listening to http://127.0.0.1:3000\n');

@@ -1,48 +1,12 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ngram Share photos and moments</title>
-    <link rel="stylesheet" href="css/reboot.css">
-    <style media="screen">
-    body {
-      font-family: 'Operator mono', 'Roboto', sans-serif;
-    }
-      header {
-        background-color: #333;
-        color: #eee;
-        padding: 12px;
-      }
-      .container {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        font-family: sans-serif;
-        color: #333;
-        padding: 8px;
-        margin: 8px;
-      }
-      .photo {
-        margin: 8px;
-        align-items: center;
-        justify-content: center;
-        border: 1px solid #ddd;
-        width: 400px;
-        height: auto;
-      }
-      footer {
-        background-color: #ccc;
-        color: #555;
-        padding: 10px;
-      }
-    </style>
-  </head>
-  <body>
-      <header>
-        Ngram - Share Photos and Moments :)
-      </header>
-      <div class="container">
+<% include base.ejs %>
+
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>Profile</li>
+        <li>Post</li>
+    </nav>
+
         <div class="photo photo-001">
           <img src="#" alt="photo-001">
           <p>Lorem Ipsum</p>
@@ -103,9 +67,5 @@
           <button type="button" name="like">Like</button>
           <button type="button" name="comment">Comment</button>
         </div>
-      </div>
-      <footer>
-        <p> Creative works of @jztsaurabh <em>sources at Github</em></p>
-      </footer>
-  </body>
-</html>
+
+<% include base2.ejs %>
