@@ -65,3 +65,14 @@ button {
 h3 {
   display: block;
 }
+
+img {
+  width: inherit;
+  height: auto;
+  max-width: 100%;
+  repeat: no-repeat;
+}
+
+.photo p {
+  padding-left: 16px;
+}
