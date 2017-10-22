@@ -18,4 +18,4 @@ Now it is under construction and heavy changes occur frequently.  So if you are 
 - Fork this and make your own changes.
 
 ### How can you use it
-You can use it as you want but you have to give me __@jztsaurabh__ proper credits and a link to this repo.
+You can use it as you want but you have to give me __@itsjzt__ proper credits and a link to this repo.
