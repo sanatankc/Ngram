@@ -14,7 +14,7 @@ Now it is under construction and heavy changes occur frequently.  So if you are 
 
 ### How to get started
 - Install Node JS
-- Clone this repo by `git clone https://www.githyb.com/jztsaurabh/Ngram.git` or the __clone button__ on Github.
+- Clone this repo by `git clone https://www.github.com/itsjzt/Ngram.git` or the __clone button__ on Github.
 - Fork this and make your own changes.
 
 ### How can you use it
